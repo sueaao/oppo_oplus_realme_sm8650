@@ -15,7 +15,7 @@ on:
         description: 'KernelSU分支(ReSukiSU/SukiSU Ultra/KernelSU Next/KSU(原版)/无内置KSU,默认ReSukiSU)'
         required: true
         type: choice
-        default: 'resukisu'
+        default: 'ksunext'
         options:
           - 'resukisu'
           - 'sukisu'
@@ -29,7 +29,7 @@ on:
         default: 'true'
       kpm_enable:
         description: '是否开启kpm(使用KpatchNext独立实现kpm(支持任意KSU/面具环境); 不需要可保持默认关闭)'
-        required: true
+        required: false
         type: boolean
         default: 'false'
       lz4_enable:
@@ -53,7 +53,7 @@ on:
           - 'default'
       droidspaces_enable:
         description: '是否启用Droidspaces容器支持(轻量化的完整Linux容器支持;false关闭,standard开启容器+ntsync支持,extend开启更多测试支持项)'
-        required: true
+        required: false
         type: choice
         default: 'false'
         options:
