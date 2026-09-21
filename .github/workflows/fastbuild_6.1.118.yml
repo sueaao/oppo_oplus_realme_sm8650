@@ -29,7 +29,7 @@ on:
         default: 'true'
       kpm_enable:
         description: '是否开启kpm(使用KpatchNext独立实现kpm(支持任意KSU/面具环境); 不需要可保持默认关闭)'
-        required: false
+        required: true
         type: boolean
         default: 'false'
       lz4_enable:
@@ -44,7 +44,7 @@ on:
         default: 'false'
       bbr_enable:
         description: '是否启用bbr算法(优化上行数据,对手机日用无太大意义甚至可能负优化;false关闭,true仅加入算法,default设为默认)'
-        required: true
+        required: default
         type: choice
         default: 'false'
         options:
